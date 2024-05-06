@@ -26,6 +26,9 @@ header {
     text-align: center;
     border: 5px solid blue;
 }
+h2{
+    color: rgb(244, 19, 19);
+}
 
 .blink {
     animation: blinker 1.5s linear infinite;
