@@ -27,7 +27,7 @@ header {
     border: 5px solid blue;
 }
 h2{
-    color: rgb(244, 19, 19);
+    color: black;
 }
 
 .blink {
@@ -35,9 +35,29 @@ h2{
     color: black;
     font-family: sans-serif;
 }
+table{
+    border: 1px solid #2e2929;
+    border-collapse: collapse;
+    width: 70%;
+}
 
 @keyframes blinker {
     50% {
         opacity: 0;
     }
+}
+.footer{
+    background-color: rgb(251, 11, 11);
+    padding: 20px;
+    text-align: center;
+}
+.side_bar{
+    float: left;
+    width: 30%;
+    padding: 15px;
+}
+.banner{
+    background-color: rgb(83, 81, 78);
+    padding: 20px;
+    text-align: center;
 }
