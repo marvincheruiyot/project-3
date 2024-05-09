@@ -41,6 +41,7 @@ table{
     width: 70%;
 }
 
+
 @keyframes blinker {
     50% {
         opacity: 0;
