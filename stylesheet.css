@@ -53,7 +53,9 @@ table{
 .overlayText{
     color: rgb(29, 25, 26);
 }
-
+button{
+    size: 10cm;
+}
 @keyframes blinker {
     50% {
         opacity: 0;
