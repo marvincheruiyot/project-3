@@ -45,6 +45,11 @@ h2{
     color: black;
     font-family: sans-serif;
 }
+.banner{
+    background-color: rgb(109, 102, 102);
+    padding: 20px;
+    text-align: center;
+}
 table{
     border: 1px solid #2e2929;
     border-collapse: collapse;
