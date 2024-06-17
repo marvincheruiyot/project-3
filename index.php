@@ -14,21 +14,8 @@
 </head>
 
 <body>
-  <div class="toplink">
-   <a href="index.html">Home</a>
-  <a href="about_us.html">About us</a>
-  <a href="contact_us.html">Contact us</a>
-  <a href="vehicle.html">vehicle</a>
-  <a href="prices.html">Prices</a>
-  <a href="termsandcondition.html">Terms&condition</a>
-
-  <div class="toplink-right">
-    <a href="login.html">login</a>
-    <a href="signup.html">signup</a>
-
-  </div>
-  </div><br>
-    
+  <?php include_once ("templates/nav.php"); ?>
+  
   <div class="column">
     <img src="img/pexels-george-chambers-413080139-20298468.jpg" alt="" style="width:100%">
   </div>
@@ -56,15 +43,4 @@
     }
   </style>
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>dearlership & rental</span></strong>. All Rights Reserved
-      </div>
-      </pr>
-    </div>
-  </footer>
-</body>
-
-</html>
+ <?php include_once ("templates/footer.php"); ?>

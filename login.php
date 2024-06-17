@@ -9,19 +9,7 @@
     <title>Marvin Enterprice</title>
     <link rel="stylesheet" href="stylesheet.css ">
 </head>
-<div class="toplink">
-    <a href="index.html">Home</a>
-   <a href="about_us.html">About us</a>
-   <a href="contact_us.html">Contact us</a>
-   <a href="vehicle.html">vehicle</a>
-   <a href="prices.html">Prices</a>
-   <a href="termsandcondition.html">Terms&condition</a>
- 
-   <div class="toplink-right">
-     <a href="login.html">login</a>
-     <a href="signup.html">signup</a>
-   </div>
-   </div><br><br><br>
+<?php include_once ("templates/nav.php"); ?> <br><br><br>
 <style>
     body {
         background-color:  rgb(230, 210, 220);

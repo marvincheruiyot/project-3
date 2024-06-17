@@ -1,16 +1,5 @@
-<!doctype html>
-<html lang="en">
- 
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Marvin Enterprice</title>
-  <link rel="stylesheet" href="stylesheet.css ">
-</head>
-
+<?php include_once("templates/heading.php") ; ?>
 <ul>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,27 +9,12 @@
 <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-<div class="toplink">
-  <a href="index.html">Home</a>
- <a href="about_us.html">About us</a>
- <a href="contact_us.html">Contact us</a>
- <a href="vehicle.html">vehicle</a>
- <a href="prices.html">Prices</a>
- <a href="termsandcondition.html">Terms&condition</a>
 
- <div class="toplink-right">
-   <a href="login.html">login</a>
-   <a href="signup.html">signup</a>
- </div>
- </div><br><br>
- 
-  
-
+<?php include_once ("templates/nav.php"); ?>
 </ul>
-<marquee class="blink">
-  <h2>Marvin Car Dealership And Rental</h2>
-</marquee>
-
+<marquee style="color: black;" class="blink">
+      <h2>Marvin car Dealership and Rental</h2>
+    </marquee>
 <body style="background-color: rgb(230, 210, 220);">
   <p>In our company we sell both new and used cars ,this will actually depend on what the customer wants.
     Not only that we offer spare parts and also perform regular services to
@@ -81,13 +55,5 @@ m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f173c0a1f9de7%3A0xad2c84df1f7f2ec8!2sWest
 lands%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1674198871101!5m2!1sen!2ske" width="600" height="450" style="border:0;"
     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </body><br>
-<marquee style="color: rgb(14, 12, 12);" class="blink">
-  <h2>THE BEST AHEAD OF THE REST</h2>
-</marquee>
-<!-- ======= Footer ======= -->
-<footer id="footer" class="footer">
-  <div class="container">
-    <div class="copyright">
-      &copy; Copyright <strong><span>dearlership & rental</span></strong>. All Rights Reserved
-    </div>
-</html>
+<?php include_once ("templates/marquee.php"); ?>
+<?php include_once ("templates/footer.php"); ?>

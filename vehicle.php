@@ -10,19 +10,7 @@
   <link rel="icon" href="img/house.jpeg ">
   <link rel="stylesheet" href="stylesheet.css ">
 </head>
-<div class="toplink">
-  <a href="index.html">Home</a>
- <a href="about_us.html">About us</a>
- <a href="contact_us.html">Contact us</a>
- <a href="vehicle.html">vehicle</a>
- <a href="prices.html">Prices</a>
- <a href="termsandcondition.html">Terms&condition</a>
-
- <div class="toplink-right">
-   <a href="login.html">login</a>
-   <a href="signup.html">signup</a>
- </div>
- </div><br><br>
+<?php include_once ("templates/nav.php"); ?>
 <marquee class="blink">
   <h2 style="color: rgb(26, 24, 24);">Marvin Car Dealership And Rental</h2>
 </marquee>
@@ -85,13 +73,5 @@
 
 
 </body><br>
-<marquee style="color: rgb(14, 12, 12);" class="blink">
-  <h2>THE BEST AHEAD OF THE REST</h2>
-</marquee>
-<!-- ======= Footer ======= -->
-<footer id="footer" class="footer">
-  <div class="container">
-    <div class="copyright">
-      &copy; Copyright <strong><span>dearlership & rental</span></strong>. All Rights Reserved
-    </div>
-</html>
+<?php include_once ("templates/marquee.php"); ?>
+<?php include_once ("templates/footer.php"); ?>
