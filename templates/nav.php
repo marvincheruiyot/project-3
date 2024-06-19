@@ -5,6 +5,7 @@
   <a href="vehicle.php">vehicle</a>
   <a href="prices.php">Prices</a>
   <a href="termsandcondition.php">Terms&condition</a>
+  <a href="partnership.php">partnership</a>
 
   <div class="toplink-right">
     <a href="login.php">login</a>

@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Marvin Enterprice</title>
-    <link rel="stylesheet" href="stylesheet.css ">
-</head>
-<?php include_once ("templates/nav.php"); ?> <br><br><br>
+<?php include_once("templates/heading.php") ; ?>
+<?php include_once ("templates/nav.php"); ?> 
 <style>
     body {
         background-color:  rgb(230, 210, 220);
@@ -17,7 +7,7 @@
 </style>
 
 <body>
-<pr> Please login </pr> <br><br>
+<pr> Please login </pr>
     <form action="" method="post">
 
         <label for="fn">fullname</label><br>
@@ -32,5 +22,3 @@
 
     </form>
 </body>
-
-</html>

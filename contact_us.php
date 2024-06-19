@@ -1,17 +1,4 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Contact</title>
-
-
-  <link rel="stylesheet" href="stylesheet.css ">
-  <link rel="icon" href="img/house.jpeg ">
-</head>
+<?php include_once("templates/heading.php") ; ?>
 
 <body style="background-color:  rgb(230, 210, 220);">
   <?php include_once ("templates/nav.php"); ?>
@@ -81,7 +68,7 @@
   </div>
   <a href="https://twitter.com/hashtag/twitter">Twitter</a><br>
   <a href="https://twitter.com/hashtag/twitter" target="_blank "><img src="img/twitter.png " alt="" height="40"
-      width="40"></a><br>
+      width="40"></a><br><br>
 
   <a href="https://www.instagram.com/">Instagram</a><br>
   <a href="https://www.instagram.com/" target="_blank"><img src="img/gram.jpeg " alt="" height="40" width="40"></a><br>

@@ -1,5 +1,5 @@
 <?php include_once("templates/heading.php") ; ?>
-<?php include_once ("templates/nav.php"); ?> <br><br><br>
+<?php include_once ("templates/nav.php"); ?> 
 <style>
     body {
         background-color:  rgb(230, 210, 220);
@@ -67,4 +67,3 @@ Enter text here...
 
     </form>
 </body> 
-</html>
