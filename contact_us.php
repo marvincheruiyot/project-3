@@ -6,7 +6,13 @@
       <h2>Marvin car Dealership and Rental</h2>
     </marquee>
     <h1 style="background-color: azure;">Contact Us</h1>
-    <img src="https://www.searchenginejournal.com/wp-content/uploads/2022/08/contact-us-2-62fa2cc2edbaf-sej.png" alt=""  style="width: 50%;"><br><br>
+    <div class="row">
+  <div class="column">
+    <img src="https://www.searchenginejournal.com/wp-content/uploads/2022/08/contact-us-2-62fa2cc2edbaf-sej.png" alt="" style="width:50%">
+  </div>
+  <div class="column">
+    <img src="img/pexels-olly-789822.jpg" alt="" style="width:50%"  style="height:50%">
+  </div>
     MAIN OFFICE NAIROBI
 
     Location: KPCU Building , Ground Floor Along Haile Selassie Avenue <br><br>

@@ -1,7 +1,4 @@
 
-<div class="column">
-<img src="mylogo/Screenshot 2024-06-19 193313.png" alt=""  style="width:12%">
-  </div><br>
 <?php include_once("templates/heading.php") ; ?>
 
 <body>
@@ -18,7 +15,6 @@
     </pr>
   </div><br>
   <div class="column" ;class="position:right">
-    
     <img src="img/pexels-gustavo-fring-4895421 (1).jpg" alt="" style="width:100%">
     <div class="side_text">
       <pr>

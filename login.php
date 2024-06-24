@@ -1,4 +1,5 @@
-<?php include_once("templates/heading.php") ; ?>
+<?php require_once ("includes/db_connect.php"); ?>
+<?php include_once ("templates/heading.php") ; ?>
 <?php include_once ("templates/nav.php"); ?> 
 <style>
     body {
@@ -9,16 +10,16 @@
 <body>
 <pr> Please login </pr>
     <form action="" method="post">
-
-        <label for="fn">fullname</label><br>
-        <input type="text" id="fn" placeholder="fullname"><br><br>
-
-        <label for="id">idnumber</label><br>
-        <input type="text" id="id" placeholder="idnumber"><br><br>
-
+    <label for="email">email</label><br>
+    <input type="email" id="email" placeholder="email"><br><br>
         <label for="password">password</label><br>
         <input type="password" id="password" placeholder="password"><br><br>
 
-
+        <input type="button" value="login">
+        <style>
+            button{
+                background-color="orange";
+            }
+        </style>
     </form>
 </body>

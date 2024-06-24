@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 18, 2024 at 07:05 PM
+-- Generation Time: Jun 20, 2024 at 09:51 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -20,8 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `run`
 --
-CREATE DATABASE IF NOT EXISTS `run` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `run`;
 
 -- --------------------------------------------------------
 
@@ -34,18 +32,22 @@ CREATE TABLE IF NOT EXISTS `users` (
   `userId` bigint(10) NOT NULL AUTO_INCREMENT,
   `fullname` varchar(50) DEFAULT NULL,
   `email` varchar(50) NOT NULL DEFAULT 'email',
-  `password` varchar(50) DEFAULT NULL,
-  `lastname` varchar(50) DEFAULT NULL,
+  `Passwod` varchar(50) DEFAULT NULL,
+  `confirm_password` varchar(50) DEFAULT NULL,
+  `datecreated` datetime NOT NULL DEFAULT current_timestamp(),
+  `dateupdated` datetime NOT NULL DEFAULT current_timestamp(),
   PRIMARY KEY (`userId`),
   UNIQUE KEY `email` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=107894 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`userId`, `fullname`, `email`, `password`, `lastname`) VALUES
-(1, 'marvo cheruyoit', 'marvo.cherotich@strathmore.edu', '12345678', 'cheruyoit');
+INSERT INTO `users` (`userId`, `fullname`, `email`, `Passwod`, `confirm_password`, `datecreated`, `dateupdated`) VALUES
+(1, 'marvo cheruyoit', 'marvo.cherotich@strathmore.edu', '12345678', NULL, '2024-06-20 20:28:20', '2024-06-20 20:28:51'),
+(23, 'marvinbett', 'marvinbett20@gmail.com', '789678', '23', '2024-06-20 21:10:14', '2024-06-20 21:10:14'),
+(107893, 'Bevan karani', 'bkarani@gmail.com', '75873678939k', NULL, '2024-06-20 20:28:20', '2024-06-20 20:28:51');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

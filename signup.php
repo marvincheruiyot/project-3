@@ -1,69 +1,53 @@
-<?php include_once("templates/heading.php") ; ?>
-<?php include_once ("templates/nav.php"); ?> 
+<?php require_once ("includes/db_connect.php"); 
+include_once("templates/heading.php") ;
+ include_once ("templates/nav.php"); 
+if (isset($_POST["Sign Up"])){
+ $fn=$_POST["fullname"];
+ $mail=_POST["email_address"];
+ $password= $_POST["password"];
+ $con= $_POST["confirm_password"];
+
+ $insert_user = "INSERT INTO users (fullname , email, Passwod, confirm_password) 
+ VALUES ('$fn', '$mail', 'password', '$con')";
+ 
+ if ($insert_user->query($sql) === TRUE) {
+   echo "New record created successfully";
+ } else {
+   echo "Error: " . $insert_user . "<br>" . $conn->error;
+ }
+}
+?>
 <style>
     body {
         background-color:  rgb(230, 210, 220);
     }
-</style>
 
+</style>
+<div class="header">
+  <h1 background-color="azure">sign up</h1>
+</div>
 <body>
     <pr>
         You are required to fill in the folling
-    </pr> <br><br>
-    <form action="" method="post">
+    </pr> 
+
+    <form action="<?php PRINT htmlspecialchars($_SERVER["PHP_SELF"]) ;?>" method="POST"><br>
 
         <label for="fn">fullname</label><br>
-        <input type="text" id="fn" placeholder="fullname"><br><br>
-
-        <label for="id">idnumber</label><br>
-        <input type="text" id="id" placeholder="idnumber"><br><br>
-
-        <label for="num">age</label><br>
-        <input type="number" id="num" placeholder="number"><br><br>
+        <input type="text" id="fn" placeholder="fullname" 
+        name="fullname" required><br><br>
 
         <label for="email">email</label><br>
-        <input type="email" id="email" placeholder="email"><br><br>
+        <input type="email" id="email" placeholder="email"
+        name="email_address" required><br><br>
 
-        <label for="date">date</label><br>
-        <input type="date" id="date" placeholder="date"><br><br>
+        <label for="password">password</label><br>
+        <input type="password" id="password" placeholder="password"
+        name="password" required><br><br>
 
-        <label for="hiring hours">hiring hours</label><br>
-        <input type="hiring hours" id="hiring hours" placeholder="number"><br><br>
-
-        <label for="car type">car type</label><br>
-        <input type="car type" id="car type" placeholder="name"><br><br>
-
-        <input type="time" placeholder="deadline "><br><br>
-
-        <input type="checkbox" id="checkbox">
-        <label for="Swahili">Swahili</label><br>
-
-        <input type="checkbox" id="checkbox">
-        <label for="Swahili">chinese</label><br>
-
-        <input type="checkbox" id="checkbox">
-        <label for="Swahili">french</label><br>
-
-        <input type="checkbox" id="checkbox">
-        <label for="japanese">japanese</label><br>
-
-        <input type="checkbox" id="checkbox">
-        <label for="English">English</label><br><br>
-
-        <label for="freeform">Tell us the car descriptions you want to hire or purshase</label>
-<br>
-
-<textarea id="freeform" name="freeform" rows="4" cols="50">
-Enter text here...
-</textarea> <br>
-
-        <input type="button" value="save details">
-        <input type="button" value="save other details">
-
-
-
-
-
-
+        <label for="password"> confirm password</label><br>
+        <input type="password" id="password" placeholder="confirm password"
+        name="confirm_password" required><br><br>
+        <input type="button" value="Sign Up" name="Sign Up">
     </form>
 </body> 
