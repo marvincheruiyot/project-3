@@ -5,7 +5,7 @@ include_once("templates/heading.php");
 include_once("templates/nav.php");
 
 $fn = $_POST["fullname"];
-$mail = $_POST["email_address"];
+$mail = $_POST["email"];
 $password = $_POST["password"];
 $con = $_POST["confirm_password"];
 

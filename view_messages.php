@@ -32,7 +32,6 @@
                 <tr>
                     <th colspan="2">email</th>
                     <th>subject</th>
-                    <th>message</th>
                     <th>Time</th>
                     <th>Action</th>
                 </tr>
@@ -65,7 +64,6 @@
                 <tr>
                     <th colspan="2">email</th>
                     <th>Subject</th>
-                    <th>message</th>
                     <th>Time</th>
                     <th>Action</th>
                 </tr>
