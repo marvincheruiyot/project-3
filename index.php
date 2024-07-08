@@ -1,9 +1,14 @@
 
-<?php include_once("templates/heading.php") ; ?>
+<?php 
+include_once("templates/heading.php") ; 
+include_once("templates/marque.php");
+?>
 
 <body>
-  <?php include_once ("templates/nav.php"); ?>
-  
+  <?php 
+  include_once ("templates/nav.php"); 
+   
+  ?>
   <div class="column">
     <img src="img/pexels-george-chambers-413080139-20298468.jpg" alt="" style="width:100%">
   </div>
@@ -29,5 +34,5 @@
       background-color:  rgb(230, 210, 220);;
     }
   </style>
-
+<?php include_once ("templates/marquee.php"); ?>
  <?php include_once ("templates/footer.php"); ?>
