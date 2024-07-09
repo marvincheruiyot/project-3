@@ -8,18 +8,21 @@ require_once("includes/db2_connect.php");
     <h2>Marvin car Dealership and Rental</h2>
   </marquee>
   <?php
-// Retrieve the userid from the query string
-$userid = mysqli_real_escape_string($conn, $_GET["userid"]);
+  // Retrieve the userid from the query string
+  $userid = mysqli_real_escape_string($conn, $_GET["userid"]);
   $userid = $_GET["userid"];
   echo ($userid);
-  $spot_msg = "SELECT * FROM hire WHERE userid = 'userid' LIMIT 1";
+  $spot_msg = "SELECT * FROM hire WHERE userid = '$userid' LIMIT 1";
   $sel_msg_res = $conn->query($spot_msg);
- 
+
   if ($sel_msg_res->num_rows > 0) {
     // output data of each row
     while ($sel_msg_row = $sel_msg_res->fetch_assoc()) {
-      $sub = $sel_msg_row["email"];
-      echo ($sub);
+      $retrievedEmail = $sel_msg_row["email"];
+      $retrievedSubject = $sel_msg_row["subject"];
+      $retrievedMsg = $sel_msg_row["message"];
+      $retrievedFullname = $sel_msg_row["fullname"];
+      //echo ($sub);
     }
   }
   if (isset($_POST["update_message"])) {
@@ -48,22 +51,22 @@ $userid = mysqli_real_escape_string($conn, $_GET["userid"]);
       <div class="side-bar">
         <h1>update message</h1>
         <form action="<?php print htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
-        <label for="fn">fullname:</label><br>
-        <input type="text" id="fn" placeholder="fullname" name="fullname" required><br><br>
+          <label for="fn">fullname:</label><br>
+          <input type="text" id="fn" placeholder="fullname" name="fullname" value="<?php print $retrievedFullname ?>" required><br><br>
           <label for="em">Email:</label><br>
-          <input type="email" id="email" placeholder="email" name="email" required value="<?php print $spot_msg_row["email"]; ?>"><br><br>
+          <input type="email" id="email" placeholder="email" name="email" required value="<?php print $retrievedEmail ?>"><br><br>
 
           <label for="sb">Subject:</label><br>
-          <select name="subject" id="sb" required value="<?php print $sel_msg_row["subject"]; ?>">
-          <option value="">--Select Subject--</option>
+          <select name="subject" id="sb" required>
+            <option value="<?php print $retrievedSubject ?>" selected><?php print $retrievedSubject ?></option>
             <option value="Car hiring">Car hiring</option>
             <option value="car purchase">car purchase</option>
             <option value="Bamma tours">bamma tours</option>
           </select><br><br>
 
           <label for="sb">Message:</label><br>
-          <textarea name="message" id="" cols="30" rows="5" required value="<?php print $spot_msg_row["message"]; ?>"></textarea><br><br>
+          <textarea name="message" id="" cols="30" rows="5" required><?php print $retrievedMsg ?></textarea><br><br>
 
           <input type="submit" name="update_message" value="update Message">
-          <input type="hidden" name="userid" value="<?php print $spot_msg_row["userid"]; ?>">
+          <input type="hidden" name="userid" value="<?php print $userid ?>">
         </form>

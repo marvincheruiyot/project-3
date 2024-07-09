@@ -32,8 +32,10 @@ if (isset($_GET["DelId"])) {
             <table border="1" ; style="background-color: rgb(209, 144, 144);">
                 <thead>
                     <tr>
-                        <th colspan="2">email</th>
-                        <th>subject</th>
+                        <th>id</th>
+                        <th>fullname</th>
+                        <th>email</th>
+                        <th>Subject</th>
                         <th>Time</th>
                         <th>Action</th>
                     </tr>
@@ -50,6 +52,7 @@ if (isset($_GET["DelId"])) {
                     ?>
                             <tr>
                                 <td><?php print $en; ?>.</td>
+                                <td><?php print $sel_msg_row["fullname"]; ?></td>
                                 <td><?php print $sel_msg_row["email"]; ?></td>
                                 <td><?php print "<strong>" . $sel_msg_row["subject"] . '</strong> - ' . substr($sel_msg_row["message"], 0, 20) . '...'; ?></td>
                                 <td><?php print date("d-M-Y H:i", strtotime($sel_msg_row["datecreated"])); ?></td>
